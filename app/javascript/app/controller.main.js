@@ -1,4 +1,4 @@
-define(['marionette' , 'app/views/main.layout' , 'app/vent' ] , function(Marionette  , Layout , vent) { 
+define(['marionette' , 'app/views/main.layout' , 'app/vent' , 'app/models/scrapper.model'] , function(Marionette  , Layout , vent , ScrapperModel) { 
 
 	var Controller = Marionette.Controller.extend({
 
@@ -8,9 +8,31 @@ define(['marionette' , 'app/views/main.layout' , 'app/vent' ] , function(Marione
 
 			appLayout.render();
 
+			this.scrapperModel = new ScrapperModel(); 
+
+			vent.on('submitURL' , _.bind(this.handleURLSubmission , this)); 
+
 		} ,   
 
 		handleURLSubmission : function(url) { 
+
+			this.scrapperModel.url = url; 
+
+			this.scrapperModel.fetch({
+
+				success : function() { 
+
+
+
+				} , 
+
+				error : function() { 
+
+					console.log("error");
+
+				}
+
+			})
 
 			
 

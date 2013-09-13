@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
         jshint : {
 
-            all : [ 'test/**/*.js' , '/app/js/app/**/*.js' ,"Gruntfile.js"]
+            all : [ 'test/**/*.js' , '/app/js/app/**/*.js' , '/app/**/*.tpl' , "Gruntfile.js"]
 
         } ,
 

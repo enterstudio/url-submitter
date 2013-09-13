@@ -22,16 +22,7 @@ define(["marionette" , "backbone" , "tpl!app/templates/layout.tpl" , "app/views/
 
 			this.form.show(new URLFormView({endPoints : this.endPoints}));
 
-			var growlView = new GrowlsView({url  : this.endPoints.growls})
-
-			this.growls.show(growlView); 
-
-			growlView.load(); 
-
-			//var notifictionController = new NotifictionController(); 
-
-			//this.form.show(notifictionController.getView()); 
-
+			this.growls.show(new GrowlsView({url  : this.endPoints.growls})); 
 		}
 
 	}); 

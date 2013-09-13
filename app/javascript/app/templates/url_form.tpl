@@ -9,13 +9,15 @@
 
 	<form>
 
-		<label for='client-list'>Sites: </label>
+		<select class='client-list'>
 
-		<select class='client-list'></select> <br />
+			<option value=''>- - - - - </option>
+
+		</select> 
 
 		<input type='text' class='url-field' name='url' />
 
-		<input type='button' name='submit_url' class='submit' value='Enter URL' />
+		<input type='button' name='submit_url' class='submit' value='Submit' />
 
 	</form>
 

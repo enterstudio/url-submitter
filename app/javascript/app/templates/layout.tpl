@@ -1,4 +1,4 @@
-<div class='app-wrapper'>
+<div id='appWrapper'>
 
 	<div id='urlForm'>
 

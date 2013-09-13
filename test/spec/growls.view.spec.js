@@ -26,17 +26,13 @@ define([ "jquery" , "app/views/growls.view" , 'app/vent' ] , function( $ , Growl
 
         });
 
-        it("Should create a growl collection view with a URL and six growls" , function(done){
+        it("Should create a growl collection and append a notification on push" , function(){
 
             (growlsView.collection.url).should.equal('../bin/mock.growls.json'); 
 
-            growlsView.load(function() { 
+            growlsView.push({message: "URL submitted successfully"}); 
 
-                (growlsView.$el.find("h3").length).should.equal(6); 
-
-                done(); 
-
-            }); 
+            (growlsView.$el.find("h3").length).should.equal(1); 
 
         }); 
 

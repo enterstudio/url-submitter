@@ -20,6 +20,8 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 		ui : {
 
+			url : "input[name=url]", 
+
 			submit : 'input[name=submit]' , 
 
 			loader : '.loader' , 
@@ -40,8 +42,6 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 			this.ui.form.hide(); 
 
-			console.log(this.$el.find("select.client-list")[0]); 
-
 			this.selectList = new SelectView({el : this.$el.find("select.client-list")[0] , url : this.endPoints.clientList}); 
 
 			var selectList = this.selectList; 
@@ -50,7 +50,7 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 			this.selectList.load(function() { 
 
-				console.log(selectList.$el.html());
+				//console.log(selectList.$el.html());
 
 			}); 
 
@@ -71,9 +71,7 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 			e.preventDefault();
 
-			console.log("submit");
-
-			vent.trigger("submitUrl")
+			vent.trigger('submitURL' , this.ui.url.val());
 
 
 		} , 

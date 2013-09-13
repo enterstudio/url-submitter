@@ -1,4 +1,4 @@
-define(["marionette" ,  'backbone' ,  'underscore' ,  'app/vent' , 'app/views/growl.view' , 'app/collections/growl.collection'], function(Marionette , Backbone , _ ,  vent , GrowlView , GrowlCollection){
+define(["marionette" ,  'backbone' ,  'underscore' ,  'app/vent' , 'app/views/growl.view' , 'app/collections/growl.collection' ], function(Marionette , Backbone , _ ,  vent , GrowlView , GrowlCollection){
 
 
 	var GrowlsView = Backbone.Marionette.CollectionView.extend({
@@ -13,19 +13,13 @@ define(["marionette" ,  'backbone' ,  'underscore' ,  'app/vent' , 'app/views/gr
 
 		}  , 
 
-		load : function(cb) { 
+		push : function(obj) {
 
-			var callback = cb || function() { };
-
-			this.collection.fetch({ success : _.bind(function () {
-
-				callback(); 
-
-				this.trigger("loadComplete");
-
-			} , this)})
+			this.collection.add(obj);
 
 		}
+
+		
 
 	}); 
 

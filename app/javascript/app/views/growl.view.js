@@ -2,7 +2,9 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/growl.tp
 
 	var GrowlView = Backbone.Marionette.ItemView.extend({
 
-		template : GrowlTpl , 
+		template : GrowlTpl ,
+
+		className : 'growl', 
 
 		initialize : function() { 
 
