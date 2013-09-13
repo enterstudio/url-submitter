@@ -34,8 +34,6 @@ define(['marionette' , 'app/views/main.layout' , 'app/vent' , 'app/models/scrapp
 
 			})
 
-			
-
 		} , 
 
 		start : function() { 

@@ -32,12 +32,6 @@ define([ "jquery" , "app/views/url.form.view" , 'app/vent' ] , function( $ , URL
 
         }); 
 
-        // it("Should submitt the url after the button is clicked" , function() { 
-
-        //  urlFormView.$el.find("input[name='submit']").click(); 
-
-        // }); 
-
     }); 
 
 }); 

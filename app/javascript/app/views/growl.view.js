@@ -6,12 +6,6 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/growl.tp
 
 		className : 'growl', 
 
-		initialize : function() { 
-
-			//console.log("rendering");
-
-		}
-
 	}); 
 
 	return GrowlView;
