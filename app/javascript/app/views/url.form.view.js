@@ -48,6 +48,12 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 			this.selectList.on("loadComplete" , _.bind(this.showForm , this)); 
 
+			this.selectList.load(function() { 
+
+				//console.log(selectList.$el.html());
+
+			}); 
+
 			this.selectList.render(); 
 
 		} , 
