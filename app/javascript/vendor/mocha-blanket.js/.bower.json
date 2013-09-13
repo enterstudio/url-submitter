@@ -1,0 +1,14 @@
+{
+  "name": "mocha-blanket.js",
+  "_cacheHeaders": {
+    "ETag": "\"0af67c42ccb3253bf60b2c01f1993f0d\"",
+    "Content-Length": "1984",
+    "Content-Type": "text/plain; charset=utf-8",
+    "Content-Disposition": "inline"
+  },
+  "_release": "e-tag:0af67c42c",
+  "main": "index.js",
+  "_source": "https://raw.github.com/alex-seville/blanket/master/src/adapters/mocha-blanket.js",
+  "_target": "*",
+  "_originalSource": "https://raw.github.com/alex-seville/blanket/master/src/adapters/mocha-blanket.js"
+}

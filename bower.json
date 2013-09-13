@@ -1,0 +1,30 @@
+{
+  "name": "Marionette App",
+  "version": "0.0.1",
+  "main": "app/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": "1.9",
+    "backbone": "~1.0.0",
+    "underscore": "~1.5.1",
+    "requirejs-text": "~2.0.10",
+    "requirejs-tpl": "*",
+    "backbone.marionette": "~1.1.0",
+    "backbone.wreqr": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.1",
+    "chai": "~1.7.2",
+    "sinon": "~1.7.3",
+    "blanket": "~1.1.5",
+    "mocha-blanket.js": "https://raw.github.com/alex-seville/blanket/master/src/adapters/mocha-blanket.js",
+    "sinon-chai": "~2.4.0"
+  }
+}

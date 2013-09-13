@@ -1,0 +1,16 @@
+{
+   "options":[
+      {
+         "id":123,
+         "name":"Tesla"
+      },
+      {
+         "id":245,
+         "name":"Tablet"
+      },
+      {
+         "id":1234,
+         "name":"British Airways"
+      }
+   ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Marionette_App",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": "",
+  "author": "Smartling, Inc.",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-mocha": "~0.4.1",
+    "grunt-blanket-mocha": "~0.3.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-docco": "~0.2.0"
+  }
+}
