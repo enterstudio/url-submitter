@@ -10,8 +10,6 @@ define(['marionette' , 'backbone' , 'underscore'] , function(Marionette  , Backb
 
 		onRender :  function() { 
 
-			
-
 			this.$el.attr("value" , this.model.get("id"));
 
 		}

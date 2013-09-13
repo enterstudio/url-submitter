@@ -1,4 +1,4 @@
-define(["marionette" , "backbone" , "tpl!app/templates/layout.tpl" , "app/url.form.view" ], function(Marionette , Backbone , layoutTemplate , URLFormView) { 
+define(["marionette" , "backbone" , "tpl!app/templates/layout.tpl" , "app/views/url.form.view"  , 'app/views/growls.view'], function(Marionette , Backbone , layoutTemplate , URLFormView , GrowlsView) { 
 
 	var Layout = Backbone.Marionette.Layout.extend({
 
@@ -14,13 +14,19 @@ define(["marionette" , "backbone" , "tpl!app/templates/layout.tpl" , "app/url.fo
 
 			"form" : "#urlForm" , 
 
-			"notifications" : "#notifications"
+			"growls" : "#growls"
 
 		} , 
 
 		onRender : function() { 
 
 			this.form.show(new URLFormView({endPoints : this.endPoints}));
+
+			var growlView = new GrowlsView({url  : this.endPoints.growls})
+
+			this.growls.show(growlView); 
+
+			growlView.load(); 
 
 			//var notifictionController = new NotifictionController(); 
 

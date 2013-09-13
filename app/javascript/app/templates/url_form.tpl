@@ -15,7 +15,7 @@
 
 		<input type='text' class='url-field' name='url' />
 
-		<input type='button' name='submit_url' value='Enter URL' />
+		<input type='button' name='submit_url' class='submit' value='Enter URL' />
 
 	</form>
 

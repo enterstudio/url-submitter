@@ -1,4 +1,4 @@
-define(['marionette' , 'app/main.layout' , 'app/vent' ] , function(Marionette  , Layout , vent) { 
+define(['marionette' , 'app/views/main.layout' , 'app/vent' ] , function(Marionette  , Layout , vent) { 
 
 	var Controller = Marionette.Controller.extend({
 

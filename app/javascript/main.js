@@ -64,7 +64,9 @@ requirejs(['app/app']  , function(app) {
 
     var endPoints = {
 
-        clientList : '../bin/clients.endpoint.json'
+        clientList : '../bin/clients.endpoint.json' , 
+
+        growls : '../bin/mock.growls.json'
 
     }
 

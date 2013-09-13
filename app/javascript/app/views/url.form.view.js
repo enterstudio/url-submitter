@@ -12,9 +12,9 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 		events : {
 
-			"onchange input[name='client-list']" : "handleSelect" , 
+			"change select.client-list" : "handleSelect" , 
 
-			"click input[name='url']" : "handleClick"
+			"click input.submit" : "handleClick"
 
 		} , 
 
@@ -71,6 +71,8 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 
 			e.preventDefault();
 
+			console.log("submit");
+
 			vent.trigger("submitUrl")
 
 
@@ -79,6 +81,8 @@ define(["marionette" ,  'backbone' ,  'underscore' , 'tpl!app/templates/url_form
 		handleSelect : function(e) {
 
 			e.preventDefault(); 
+
+			console.log("select");
 
 
 		}

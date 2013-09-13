@@ -63,7 +63,7 @@ requirejs.config({
 
 });
 
-requirejs(['spec/url.form.spec' , 'spec/select.view.spec'] , function() { 
+requirejs(['spec/url.form.spec' , 'spec/select.view.spec' , 'spec/growls.view.spec'] , function() { 
 
     if (window.mochaPhantomJS) { 
 

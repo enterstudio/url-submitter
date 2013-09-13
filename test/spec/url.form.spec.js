@@ -1,49 +1,43 @@
-define([ "jquery" , "app/url.form.view" , 'app/vent' ] , function( $ , URLFormView , vent) { 
+define([ "jquery" , "app/views/url.form.view" , 'app/vent' ] , function( $ , URLFormView , vent) { 
 
-	chai.should(); 
+    chai.should(); 
 
-	//chai.use(sinonChai);
+    //chai.use(sinonChai);
 
-	var urlFormView; 
+    var urlFormView; 
 
-	describe("URL Form View" , function(){
+    describe("URL Form View" , function(){
 
-		beforeEach(function() { 
+        beforeEach(function() { 
 
-			var endPoints = {clientList : '../bin/clients.endpoint.json'};
+            var endPoints = {clientList : '../bin/clients.endpoint.json'};
 
-			urlFormView = new URLFormView({el : $("#fixture") , endPoints : endPoints}); 
+            urlFormView = new URLFormView({el : $("#fixture") , endPoints : endPoints}); 
 
-			urlFormView.render();
+            urlFormView.render();
 
-		}); 
+        }); 
 
-		afterEach(function() { 
+        afterEach(function() { 
 
-			$("#fixture").html(""); 
+            $("#fixture").html(""); 
 
-			var urlFormView = null; 
+            var urlFormView = null; 
 
-		});
+        });
 
-		it("Should create a form with a URL input" , function(){
+        it("Should create a form with a URL input" , function(){
 
-			(urlFormView.$el.find("input[name='url']").length).should.equal(1);
+            (urlFormView.$el.find("input[name='url']").length).should.equal(1);
 
-		}); 
+        }); 
 
-		it("Should submitt the url after the button is clicked" , function() { 
+        // it("Should submitt the url after the button is clicked" , function() { 
 
-			//console.log(vent);
+        //  urlFormView.$el.find("input[name='submit']").click(); 
 
-			//var spy = sinon.spy(vent); 
+        // }); 
 
-			urlFormView.$el.find("input[name='submit']").click(); 
-
-			//spy.called.should.be.ok; 
-
-		}); 
-
-	}); 
+    }); 
 
 }); 

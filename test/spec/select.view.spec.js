@@ -28,8 +28,6 @@ define(["jquery" , "app/views/components/select.view" ] , function( $ , SelectVi
 
 			selectView.load(function() { 
 
-				console.log(selectView.$el.html());
-
 				(selectView.$el.find("option").length).should.equal(3);
 
 				done();

@@ -5,4 +5,8 @@
 
 	</div>
 
+	<div id='growls'>
+
+	</div>
+
 </div>
